@@ -1,0 +1,17 @@
+{
+    "template" : "sonic_traffic",
+    "settings" : {
+      "index" : {
+        "refresh_interval" : "5s"
+      }
+    },
+    "geoip"  : {
+    "dynamic": true,
+    "properties" : {
+          "ip": { "type": "ip" },
+            "location" : { "type" : "geo_point" },
+            "latitude" : { "type" : "half_float" },
+            "longitude" : { "type" : "half_float" }
+          }
+        }
+}
